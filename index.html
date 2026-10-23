@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home – Mannenkoor Eendracht</title>
+<meta name="description" content="Mannenkoor Eendracht uit Swartbroek (gemeente Weert), opgericht in 1923. Repetitie elke woensdag bij Bi-j Sanne.">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Source+Sans+3:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FBFAF7;color:#1B2A4A;font-family:'Source Sans 3',system-ui,sans-serif;font-size:18px;line-height:1.6}
+a{color:#8A6A1C}a:hover{color:#14213D}
+h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;margin:0;line-height:1.15;font-weight:600}
+p{margin:0}
+img{display:block;max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding-left:24px;padding-right:24px;box-sizing:border-box}
+.nl{color:#FBFAF7;text-decoration:none;padding:10px 2px;border-bottom:2px solid transparent}
+.nl:hover{color:#E2C275;border-bottom-color:#E2C275}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 26px;border-radius:6px;font-weight:600;text-decoration:none;font-size:17px;box-sizing:border-box;gap:10px}
+.btn-gold{background:#C9A24A;color:#14213D}.btn-gold:hover{background:#E2C275;color:#14213D}
+.btn-line{border:2px solid #FBFAF7;color:#FBFAF7}.btn-line:hover{background:rgba(255,255,255,.12);color:#FBFAF7}
+.btn-navy{background:#14213D;color:#FBFAF7}.btn-navy:hover{background:#1B2A4A;color:#FBFAF7}
+.eyebrow{font-size:14px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:#8A6A1C}
+.muted{color:#4A5568}
+.g3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.g4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.g2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px;align-items:center}
+.card{background:#fff;border:1px solid #E6E1D6;border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
+.card a{text-decoration:none}
+.fl{color:#D8DCE6;text-decoration:none;display:block;padding:4px 0}.fl:hover{color:#E2C275}
+.medal-wrap{position:relative;display:flex;justify-content:center;align-items:center;min-height:480px}
+.medal-in{position:relative;width:min(300px,62%);animation:drop 1.4s cubic-bezier(.2,.8,.2,1) both}
+.medal{width:100%;height:auto;transform-origin:50% 5%;animation:swing 7s ease-in-out infinite;filter:drop-shadow(0 26px 30px rgba(20,33,61,.34))}
+.wm{position:absolute;right:-40px;top:50%;height:560px;width:auto;transform:translateY(-50%);opacity:.13;pointer-events:none}
+@keyframes swing{0%,100%{transform:rotate(-2.6deg) translateY(0)}50%{transform:rotate(2.6deg) translateY(-8px)}}
+@keyframes drop{from{opacity:0;transform:translateY(-50px)}to{opacity:1;transform:translateY(0)}}
+.cover{display:block;width:100%;max-width:340px;justify-self:center;perspective:1400px;text-decoration:none}
+.cover img{width:100%;border-radius:4px 10px 10px 4px;box-shadow:-24px 30px 60px rgba(0,0,0,.55),inset 6px 0 12px rgba(0,0,0,.25);transform:rotateY(18deg);transform-origin:left center;transition:transform .7s cubic-bezier(.2,.8,.2,1),box-shadow .7s}
+.cover:hover img{transform:rotateY(-2deg) scale(1.03);box-shadow:-34px 44px 90px rgba(0,0,0,.65),inset 6px 0 12px rgba(0,0,0,.25)}
+.player{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:28px;align-items:stretch}
+.feat{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:16/9;background:#000;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.feat img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.feat-shade{position:absolute;inset:0;background:linear-gradient(0deg,rgba(14,23,48,.96) 0%,rgba(14,23,48,.25) 50%,rgba(14,23,48,0) 100%)}
+.play{position:absolute;left:50%;top:46%;width:92px;height:92px;margin:-46px 0 0 -46px;border-radius:50%;background:#C9A24A;color:#14213D;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 14px rgba(201,162,74,.22),0 20px 50px rgba(0,0,0,.45);transition:transform .25s,background .25s}
+.play:hover{transform:scale(1.08);background:#E2C275;color:#14213D}
+.feat-cap{position:absolute;left:28px;right:28px;bottom:24px;display:flex;flex-direction:column;gap:4px}
+.feat-t{font-family:'Playfair Display',Georgia,serif;font-size:32px;font-weight:600;color:#FBFAF7;line-height:1.1}
+.feat-d{color:#D8DCE6;font-size:15px}
+.list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.song{width:100%;display:flex;align-items:center;gap:14px;padding:10px 16px 10px 10px;border-radius:10px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:#FBFAF7;cursor:pointer;font:inherit;text-align:left;min-height:72px;box-sizing:border-box}
+.song:hover{background:rgba(255,255,255,.1)}
+.song.on{background:rgba(201,162,74,.16);border-color:#C9A24A}
+.song img{width:96px;height:54px;object-fit:cover;border-radius:6px;flex-shrink:0}
+.song .num{font-family:'Playfair Display',Georgia,serif;font-size:18px;color:#E2C275;width:22px;text-align:center;flex-shrink:0}
+.song .meta{display:flex;flex-direction:column;flex-grow:1;min-width:0}
+.song .t{font-weight:600}.song .d{font-size:14px;color:#9AA3B8}
+@media (max-width:1000px){.player{grid-template-columns:repeat(1,minmax(0,1fr))}.feat-t{font-size:22px}.play{width:68px;height:68px;margin:-34px 0 0 -34px}.feat-cap{left:18px;right:18px;bottom:16px}}
+@media (max-width:900px){.g3,.g4,.g2{grid-template-columns:repeat(1,minmax(0,1fr))}.g4{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-h{font-size:40px !important}.stat{border-right:none !important}.medal-wrap{min-height:380px}.wm{display:none}}
+@media (prefers-reduced-motion:reduce){.medal,.medal-in{animation:none}}
+</style>
+</head>
+<body>
+<div style="display:flex;flex-direction:column;min-height:100vh">
+
+<header style="background:#14213D;color:#FBFAF7">
+<div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;padding-top:14px;padding-bottom:14px">
+<a href="index.html" style="display:flex;align-items:center;gap:14px;text-decoration:none;color:#FBFAF7">
+<svg viewBox="100 330 1740 1300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo Mannenkoor Eendracht" style="height:44px;width:auto;flex-shrink:0"><path fill="#C9A24A" d="M548 358H1388L1808 783L1390 1190H1030C1105 1150 1165 1090 1185 1005C1195 915 1085 785 965 785C850 785 770 905 768 1005C768 1100 880 1185 968 1245V1600L125 783Z"></path></svg>
+<span style="font-family:'Playfair Display',Georgia,serif;font-size:22px;font-weight:600">Mannenkoor Eendracht</span>
+</a>
+<nav aria-label="Hoofdmenu" style="display:flex;flex-wrap:wrap;gap:4px 22px;align-items:center;font-weight:600;font-size:16px">
+<a class="nl" href="index.html" style="border-bottom-color:#E2C275;color:#E2C275">Home</a>
+<a class="nl" href="historie.html">Historie</a>
+<a class="nl" href="koorleden.html">Koorleden</a>
+<a class="nl" href="optredens.html">Optredens</a>
+<a class="nl" href="activiteiten.html">Activiteiten</a>
+<a class="nl" href="sponsoring.html">Sponsoring</a>
+<a class="nl" href="contact.html">Contact</a>
+<a class="btn btn-gold" href="meezingen.html" style="min-height:44px;padding:0 20px">Meezingen?</a>
+</nav>
+</div>
+</header>
+
+<section style="position:relative;background:#14213D;color:#FBFAF7;overflow:hidden">
+<img src="assets/img/hero.jpg" alt="Groepsfoto van Mannenkoor Eendracht" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.42">
+<div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,33,61,.92) 0%,rgba(20,33,61,.55) 60%,rgba(20,33,61,.25) 100%)"></div>
+<svg class="wm" viewBox="100 330 1740 1300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#C9A24A" d="M548 358H1388L1808 783L1390 1190H1030C1105 1150 1165 1090 1185 1005C1195 915 1085 785 965 785C850 785 770 905 768 1005C768 1100 880 1185 968 1245V1600L125 783Z"></path></svg>
+<div class="wrap" style="position:relative;padding-top:120px;padding-bottom:120px;max-width:1200px">
+<div style="max-width:720px;display:flex;flex-direction:column;gap:24px">
+<p class="eyebrow" style="color:#E2C275">Sinds 1923 · Swartbroek, gemeente Weert</p>
+<h1 class="hero-h" style="font-size:64px;font-weight:700;color:#FBFAF7">Ruim honderd jaar mannenzang uit Swartbroek</h1>
+<p style="font-size:21px;line-height:1.5;color:#D8DCE6;max-width:600px">Drieënveertig zangers, één dirigent en een repertoire van 206 liederen: van Toon Hermans tot The Beatles, van een Latijnse mis tot het Ave Maria in dialect. Onderscheiden met de Koninklijke Erepenning.</p>
+<div style="display:flex;gap:14px;flex-wrap:wrap;padding-top:8px">
+<a class="btn btn-gold" href="meezingen.html">Kom een avond meezingen</a>
+<a class="btn btn-line" href="optredens.html">Bekijk de agenda</a>
+</div>
+</div>
+</div>
+</section>
+
+<section style="background:#FBFAF7;border-bottom:1px solid #E6E1D6">
+<div class="wrap g4" style="padding-top:40px;padding-bottom:40px;gap:0">
+<div class="stat" style="padding:8px 24px;border-right:1px solid #E6E1D6;text-align:center"><p style="font-family:'Playfair Display',serif;font-size:44px;font-weight:700;color:#14213D;line-height:1">1923</p><p class="muted" style="font-size:15px;margin-top:6px">Opgericht</p></div>
+<div class="stat" style="padding:8px 24px;border-right:1px solid #E6E1D6;text-align:center"><p style="font-family:'Playfair Display',serif;font-size:44px;font-weight:700;color:#14213D;line-height:1">43</p><p class="muted" style="font-size:15px;margin-top:6px">Zingende leden</p></div>
+<div class="stat" style="padding:8px 24px;border-right:1px solid #E6E1D6;text-align:center"><p style="font-family:'Playfair Display',serif;font-size:44px;font-weight:700;color:#14213D;line-height:1">206</p><p class="muted" style="font-size:15px;margin-top:6px">Liederen in de bibliotheek</p></div>
+<div class="stat" style="padding:8px 24px;text-align:center"><p style="font-family:'Playfair Display',serif;font-size:44px;font-weight:700;color:#14213D;line-height:1">10</p><p class="muted" style="font-size:15px;margin-top:6px">Dirigenten in honderd jaar</p></div>
+</div>
+</section>
+
+<section class="wrap g2" style="padding-top:96px;padding-bottom:80px">
+<div style="display:flex;flex-direction:column;gap:20px">
+<p class="eyebrow">Welkom</p>
+<h2 style="font-size:40px">Een koor met een Koninklijke Erepenning</h2>
+<p>Welkom op de website van Mannenkoor Eendracht uit Swartbroek. Tijdens het jubileumconcert ter gelegenheid van ons 100-jarig bestaan, op 17 december 2023, reikte burgemeester Vlecken van Weert de Koninklijke Erepenning uit aan het koor.</p>
+<p>Op deze website vindt u informatie over het koor, onze geschiedenis, de leden en onze activiteiten. Heeft u vragen? Neem dan gerust contact met ons op.</p>
+<p style="font-style:italic;color:#4A5568">Namens Mannenkoor Eendracht,<br>Het Bestuur</p>
+<div><a class="btn btn-navy" href="historie.html">Lees onze geschiedenis</a></div>
+</div>
+<figure class="medal-wrap" style="margin:0">
+<div class="medal-in"><img class="medal" src="assets/img/erepenning.png" alt="De Koninklijke Erepenning met de beeltenis van koning Willem-Alexander"></div>
+<figcaption class="muted" style="position:absolute;bottom:0;left:0;right:0;text-align:center;font-size:15px">Koninklijke Erepenning · uitgereikt op 17 december 2023</figcaption>
+</figure>
+</section>
+
+<section style="background:#14213D;color:#FBFAF7;overflow:hidden">
+<div class="wrap g2" style="padding-top:96px;padding-bottom:96px">
+<a class="cover" href="boek.html" aria-label="Open het jubileumboek en blader erdoorheen"><img src="assets/img/boek.png" alt="Omslag van het boek 100 jaar Mannenkoor Eendracht"></a>
+<div style="display:flex;flex-direction:column;gap:20px">
+<p class="eyebrow" style="color:#E2C275">Jubileumboek · 160 pagina's</p>
+<h2 style="font-size:40px;color:#FBFAF7">Honderd jaar Eendracht in één boek</h2>
+<p style="color:#D8DCE6">Voor het 100-jarig bestaan maakten Jan Custers en Bèr Peeters een boek over het koor: van het prille begin bij het kapelletje van de Drie Gezusters, via moeilijke oorlogsjaren, concerten, oorkondes en medailles, tot vandaag. Vol foto's, krantenartikelen en anekdotes.</p>
+<p style="color:#D8DCE6">Blader het boek hier online door, pagina voor pagina, op uw telefoon of beeldschermvullend op de computer. Het gedrukte boek en de jubileum-cd zijn te koop bij de leden en bij eetcafé &amp; catering Bi-j Sanne.</p>
+<div style="display:flex;gap:14px;flex-wrap:wrap">
+<a class="btn btn-gold" href="boek.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 4h7a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H2zM22 4h-7a3 3 0 0 0-3 3v13a2 2 0 0 1 2-2h8z"></path></svg>Blader door het boek</a>
+<a class="btn btn-line" href="https://www.mannenkooreendracht.nl/_files/ugd/6a8898_db657a32f4ed4fa6b10df219e7d3bd65.pdf">Download als pdf</a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="wrap" style="padding-top:96px;padding-bottom:96px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px">
+<div><p class="eyebrow">Actueel</p><h2 style="font-size:40px">Laatste nieuws van het koor</h2></div>
+<a href="activiteiten.html" style="font-weight:600">Alle activiteiten →</a>
+</div>
+<div class="g3">
+<article class="card">
+<img src="assets/img/a-kessenich.jpg" alt="Het koor zingt in Kessenich" style="width:100%;height:220px;object-fit:cover">
+<div style="padding:24px;display:flex;flex-direction:column;gap:10px;flex-grow:1">
+<p class="eyebrow" style="font-size:13px">27 maart 2026</p>
+<h3 style="font-size:24px">Optreden in Kessenich</h3>
+<p class="muted" style="font-size:16px">Op uitnodiging van de ouderenvereniging zongen we klassiek, modern, Nederlands en Limburgs. Het publiek zong vrolijk en uitbundig mee.</p>
+<a href="activiteiten.html" style="font-weight:600;margin-top:auto">Lees verder →</a>
+</div>
+</article>
+<article class="card">
+<img src="assets/img/a-cecilia25.jpg" alt="Ceciliafeest 2025" style="width:100%;height:220px;object-fit:cover">
+<div style="padding:24px;display:flex;flex-direction:column;gap:10px;flex-grow:1">
+<p class="eyebrow" style="font-size:13px">22 november 2025</p>
+<h3 style="font-size:24px">Lei van den Schoor 70 jaar lid</h3>
+<p class="muted" style="font-size:16px">Middelpunt van het Ceciliafeest: Lei vierde zijn zeventigjarig lidmaatschap en werd benoemd tot erelid van het koor.</p>
+<a href="activiteiten.html" style="font-weight:600;margin-top:auto">Lees verder →</a>
+</div>
+</article>
+<article class="card">
+<img src="assets/img/a-herfst.jpg" alt="Herfstconcert in de Corneel" style="width:100%;height:220px;object-fit:cover">
+<div style="padding:24px;display:flex;flex-direction:column;gap:10px;flex-grow:1">
+<p class="eyebrow" style="font-size:13px">26 oktober 2025</p>
+<h3 style="font-size:24px">Herfstconcert in de Corneel</h3>
+<p class="muted" style="font-size:16px">Een volle zaal, gemengd koor Con Amore uit Baexem en de 14-jarige trompettist Robin Peeters als gasten.</p>
+<a href="activiteiten.html" style="font-weight:600;margin-top:auto">Lees verder →</a>
+</div>
+</article>
+</div>
+</section>
+
+<section id="videos" style="background:#0E1730;color:#FBFAF7">
+<div class="wrap" style="padding-top:96px;padding-bottom:96px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px">
+<div><p class="eyebrow" style="color:#E2C275">Luister</p><h2 style="font-size:40px;color:#FBFAF7">Hoor het koor</h2></div>
+<p style="color:#9AA3B8;font-size:15px;max-width:420px">Vier opnames uit 2023, het jaar van de jubileum-cd. Kies een lied en druk op afspelen.</p>
+</div>
+<div class="player">
+<div class="feat">
+<img id="featPoster" src="assets/img/v-herder.jpg" alt="">
+<div class="feat-shade"></div>
+<a class="play" id="featPlay" href="https://www.mannenkooreendracht.nl/s-projects-side-by-side" target="_blank" rel="noopener" aria-label="Afspelen: Herder"><svg width="38" height="38" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg></a>
+<div class="feat-cap"><p class="eyebrow" style="color:#E2C275"><span id="featNum">1</span> van 4</p><p class="feat-t" id="featTitle">Herder</p><p class="feat-d"><span id="featDur">2:49</span> · Mannenkoor Eendracht o.l.v. Paul Koolen</p></div>
+</div>
+<ol class="list" id="songList">
+<li><button class="song on" type="button" data-i="0"><span class="num">1</span><img src="assets/img/v-herder.jpg" alt=""><span class="meta"><span class="t">Herder</span><span class="d">2:49</span></span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E2C275" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 14v5M10 8v11M15 11v8M20 5v14"></path></svg></button></li>
+<li><button class="song" type="button" data-i="1"><span class="num">2</span><img src="assets/img/v-malamoja.jpg" alt=""><span class="meta"><span class="t">Malamoja</span><span class="d">3:51</span></span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E2C275" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 14v5M10 8v11M15 11v8M20 5v14"></path></svg></button></li>
+<li><button class="song" type="button" data-i="2"><span class="num">3</span><img src="assets/img/v-stillekempen.jpg" alt=""><span class="meta"><span class="t">In de stille Kempen</span><span class="d">5:15</span></span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E2C275" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 14v5M10 8v11M15 11v8M20 5v14"></path></svg></button></li>
+<li><button class="song" type="button" data-i="3"><span class="num">4</span><img src="assets/img/v-graas.jpg" alt=""><span class="meta"><span class="t">In 't graas van de wei</span><span class="d">2:45</span></span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E2C275" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 14v5M10 8v11M15 11v8M20 5v14"></path></svg></button></li>
+</ol>
+</div>
+</div>
+</section>
+
+<section class="wrap g2" style="padding-top:96px;padding-bottom:96px">
+<div style="display:flex;flex-direction:column;gap:20px">
+<p class="eyebrow">Repetities</p>
+<h2 style="font-size:40px">Elke woensdagavond, rond het biljart</h2>
+<p>We repeteren wekelijks op woensdag van 20.00 tot 22.00 uur bij Bi-j Sanne in Swartbroek (voorheen café Plexat). Rond 21.00 uur is er pauze, en om 22.00 uur begint de spreekwoordelijke derde helft.</p>
+<p>Wilt u een keer komen luisteren of meezingen? Loop gerust binnen, of maak een afspraak met onze voorzitter.</p>
+<div style="display:flex;gap:14px;flex-wrap:wrap">
+<a class="btn btn-navy" href="meezingen.html">Meer over meezingen</a>
+<a class="btn" href="sponsoring.html" style="border:2px solid #14213D;color:#14213D">Word donateur</a>
+</div>
+</div>
+<img src="assets/img/lokaal.jpg" alt="Repetitielokaal Bi-j Sanne in Swartbroek" style="width:100%;border-radius:10px;box-shadow:0 20px 50px rgba(20,33,61,.18)">
+</section>
+
+<footer style="background:#14213D;color:#D8DCE6;padding:64px 0 32px;margin-top:auto">
+<div class="wrap g4" style="gap:40px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:12px">
+<svg viewBox="100 330 1740 1300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="height:64px;width:auto"><path fill="#C9A24A" d="M548 358H1388L1808 783L1390 1190H1030C1105 1150 1165 1090 1185 1005C1195 915 1085 785 965 785C850 785 770 905 768 1005C768 1100 880 1185 968 1245V1600L125 783Z"></path></svg>
+<p style="font-family:'Playfair Display',serif;font-size:20px;color:#FBFAF7;font-weight:600">Mannenkoor Eendracht</p>
+<p style="font-size:15px">Sinds 1923 · Swartbroek, gemeente Weert<br>Aangesloten bij KNZV-Limburg</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px;font-size:15px">
+<p style="color:#E2C275;font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:13px;margin-bottom:6px">Secretariaat</p>
+<p>Paul van de Laar<br>Boerhaavestraat 3<br>6001 AV Weert</p>
+<a class="fl" href="tel:+31495530739">0495-530739</a>
+<a class="fl" href="mailto:eendrachtmannenkoor@gmail.com">eendrachtmannenkoor@gmail.com</a>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px;font-size:15px">
+<p style="color:#E2C275;font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:13px;margin-bottom:6px">Repetitie</p>
+<p>Elke woensdag<br>20.00 – 22.00 uur<br>Bi-j Sanne, Swartbroek</p>
+</div>
+<div style="display:flex;flex-direction:column;font-size:15px">
+<p style="color:#E2C275;font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:13px;margin-bottom:6px">Pagina's</p>
+<a class="fl" href="historie.html">Historie</a>
+<a class="fl" href="koorleden.html">De koorleden</a>
+<a class="fl" href="optredens.html">Optredens &amp; agenda</a>
+<a class="fl" href="activiteiten.html">Activiteiten</a>
+<a class="fl" href="boek.html">Jubileumboek</a>
+<a class="fl" href="sponsoring.html">Sponsoring &amp; donateurs</a>
+<a class="fl" href="meezingen.html">Meezingen?</a>
+<a class="fl" href="contact.html">Contact</a>
+</div>
+</div>
+<div class="wrap" style="border-top:1px solid rgba(255,255,255,.15);margin-top:48px;padding-top:24px;font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px">
+<p>© 2026 Mannenkoor Eendracht</p>
+<p>Donateur worden: NL56 RABO 0176 9684 66 t.n.v. Mannenkoor Eendracht</p>
+</div>
+</footer>
+
+</div>
+<script>
+(function(){
+  var songs = [{"title": "Herder", "dur": "2:49", "poster": "v-herder.jpg"}, {"title": "Malamoja", "dur": "3:51", "poster": "v-malamoja.jpg"}, {"title": "In de stille Kempen", "dur": "5:15", "poster": "v-stillekempen.jpg"}, {"title": "In 't graas van de wei", "dur": "2:45", "poster": "v-graas.jpg"}];
+  var list = document.getElementById('songList');
+  if (!list) return;
+  list.addEventListener('click', function(e){
+    var b = e.target.closest('button.song'); if (!b) return;
+    var i = parseInt(b.getAttribute('data-i'), 10); var s = songs[i];
+    document.getElementById('featPoster').src = 'assets/img/' + s.poster;
+    document.getElementById('featTitle').textContent = s.title;
+    document.getElementById('featDur').textContent = s.dur;
+    document.getElementById('featNum').textContent = i + 1;
+    document.getElementById('featPlay').setAttribute('aria-label', 'Afspelen: ' + s.title);
+    list.querySelectorAll('button.song').forEach(function(x){ x.classList.toggle('on', x === b); });
+  });
+})();
+</script>
+</body>
+</html>

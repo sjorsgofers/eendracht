@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jubileumboek 100 jaar Mannenkoor Eendracht</title>
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Source+Sans+3:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0E1730;color:#FBFAF7;font-family:'Source Sans 3',system-ui,sans-serif;font-size:16px;line-height:1.5}
+a{color:#E2C275}a:hover{color:#FBFAF7}
+h1,p{margin:0}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 20px;min-height:60px;box-sizing:border-box}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:0 14px;border-radius:6px;font-weight:600;text-decoration:none;font-size:14px;border:1px solid rgba(255,255,255,.28);color:#FBFAF7;background:transparent;cursor:pointer;font-family:inherit;gap:8px;box-sizing:border-box;white-space:nowrap}
+.btn:hover{background:rgba(255,255,255,.1);color:#FBFAF7}
+.btn-gold{background:#C9A24A;color:#14213D;border-color:#C9A24A}.btn-gold:hover{background:#E2C275;color:#14213D}
+.eyebrow{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:#E2C275}
+.stage{position:relative;display:flex;align-items:center;justify-content:center;padding:4px 12px 8px;--ph:min(calc(100vh - 136px), calc((100vw - 24px) / 0.707))}
+.double .stage{--ph:min(calc(100vh - 136px), calc((100vw - 40px) / 2 / 0.707))}
+.book{position:relative;display:flex;perspective:2800px;box-shadow:0 50px 100px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.06);border-radius:4px}
+.page{position:relative;height:var(--ph);aspect-ratio:893/1263;background:#F6F1E7;overflow:hidden}
+.page img,.face img{width:100%;height:100%;display:block;object-fit:cover}
+.page.l{border-radius:4px 0 0 4px}.page.r{border-radius:0 4px 4px 0}
+.single .page.r{border-radius:4px}
+.page.l:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,0) 88%,rgba(0,0,0,.22));pointer-events:none}
+.page.r:after{content:"";position:absolute;inset:0;background:linear-gradient(270deg,rgba(0,0,0,0) 88%,rgba(0,0,0,.22));pointer-events:none}
+.single .page.r:after{display:none}
+.leaf{position:absolute;top:0;height:var(--ph);aspect-ratio:893/1263;transform-style:preserve-3d;transition:transform .95s cubic-bezier(.45,.05,.2,1);z-index:5;pointer-events:none}
+.leaf.next{right:0;transform-origin:left center}
+.leaf.prev{left:0;transform-origin:right center}
+.leaf.next.go{transform:rotateY(-180deg)}
+.leaf.prev.go{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:#F6F1E7;overflow:hidden;box-shadow:0 0 40px rgba(0,0,0,.35)}
+.face.back{transform:rotateY(180deg)}
+.nav{position:absolute;top:50%;transform:translateY(-50%);width:56px;height:56px;border-radius:50%;border:1px solid rgba(255,255,255,.28);background:rgba(14,23,48,.75);color:#FBFAF7;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0;z-index:6;backdrop-filter:blur(4px)}
+.nav.l{left:20px}.nav.r{right:20px}
+.nav:hover{background:rgba(255,255,255,.18)}.nav:disabled{opacity:.25;cursor:default}
+.bar{display:flex;align-items:center;gap:16px;padding:6px 20px 14px;flex-wrap:wrap;justify-content:center;color:#D8DCE6;min-height:60px;box-sizing:border-box}
+input[type=range]{width:min(560px,70vw);accent-color:#C9A24A}
+.tap{position:absolute;top:0;bottom:0;width:50%;background:transparent;border:0;cursor:pointer;z-index:4;padding:0}
+.tap.l{left:0}.tap.r{right:0}
+.hint{font-size:13px;color:#9AA3B8}
+@media (max-width:760px){.top{padding:8px 12px}.nav{display:none}.stage{padding:2px 8px 6px;--ph:min(calc(100vh - 128px), calc((100vw - 16px) / 0.707))}.hint{display:none}.title-h{display:none}}
+@media (prefers-reduced-motion:reduce){.leaf{transition-duration:.2s}}
+</style>
+</head>
+<body>
+<div id="root" class="single" style="min-height:100vh;display:flex;flex-direction:column">
+
+<header class="top">
+<a href="index.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:#FBFAF7;min-width:0">
+<svg viewBox="100 330 1740 1300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="height:32px;width:auto;flex-shrink:0"><path fill="#C9A24A" d="M548 358H1388L1808 783L1390 1190H1030C1105 1150 1165 1090 1185 1005C1195 915 1085 785 965 785C850 785 770 905 768 1005C768 1100 880 1185 968 1245V1600L125 783Z"></path></svg>
+<span class="title-h" style="font-family:'Playfair Display',Georgia,serif;font-size:17px;font-weight:600">Mannenkoor Eendracht</span>
+</a>
+<div style="text-align:center;min-width:0">
+<p class="eyebrow">Jubileumboek</p>
+<h1 style="font-family:'Playfair Display',Georgia,serif;font-size:17px;font-weight:600;line-height:1.2;white-space:nowrap">100 jaar Eendracht</h1>
+</div>
+<div style="display:flex;gap:8px;flex-wrap:nowrap">
+<button class="btn" type="button" id="modeBtn">Twee pagina’s</button>
+<a class="btn" href="https://www.mannenkooreendracht.nl/_files/ugd/6a8898_db657a32f4ed4fa6b10df219e7d3bd65.pdf">Pdf</a>
+<a class="btn btn-gold" href="index.html">Sluiten</a>
+</div>
+</header>
+
+<main class="stage" style="flex-grow:1">
+<button class="nav l" type="button" id="prevBtn" aria-label="Vorige pagina"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 5-7 7 7 7"></path></svg></button>
+<div class="book" id="book">
+<div class="page l" id="pageL" hidden></div>
+<div class="page r" id="pageR"></div>
+<button class="tap l" type="button" id="tapL" aria-label="Vorige pagina"></button>
+<button class="tap r" type="button" id="tapR" aria-label="Volgende pagina"></button>
+</div>
+<button class="nav r" type="button" id="nextBtn" aria-label="Volgende pagina"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg></button>
+</main>
+
+<footer class="bar">
+<span id="label" style="min-width:150px;text-align:center;font-weight:600">Omslag</span>
+<input type="range" id="range" min="0" max="159" value="0" aria-label="Blader door het boek">
+<span class="hint">Tik links of rechts op de pagina om te bladeren</span>
+</footer>
+
+</div>
+
+<script>
+(function () {
+  var N = 160, FLIP_MS = 980;
+  var src = function (i) { return (i >= 0 && i < N) ? 'assets/boek/p' + ('00' + (i + 1)).slice(-3) + '.jpg' : ''; };
+  var state = { k: 0, dbl: false, flip: null };
+  var root = document.getElementById('root'), book = document.getElementById('book');
+  var pageL = document.getElementById('pageL'), pageR = document.getElementById('pageR');
+  var label = document.getElementById('label'), range = document.getElementById('range');
+  var prevBtn = document.getElementById('prevBtn'), nextBtn = document.getElementById('nextBtn');
+  var modeBtn = document.getElementById('modeBtn');
+  var leaf = null, timer = null;
+
+  function firstPage(k, dbl) { return dbl ? (k === 0 ? 0 : 2 * k - 1) : k; }
+  function maxK(dbl) { return dbl ? Math.ceil(N / 2) : N - 1; }
+  function setPage(el, i) {
+    el.innerHTML = '';
+    if (i >= 0 && i < N) { var im = document.createElement('img'); im.src = src(i); im.alt = 'Pagina ' + (i + 1); el.appendChild(im); }
+  }
+  function preload() {
+    var first = firstPage(state.k, state.dbl);
+    for (var i = first - 2; i <= first + 4; i++) { var s = src(i); if (s) { var im = new Image(); im.src = s; } }
+  }
+  function render() {
+    var k = state.k, dbl = state.dbl, f = state.flip, left, right;
+    root.className = dbl ? 'double' : 'single';
+    if (f) { left = f.left; right = f.right; }
+    else if (dbl) { left = k === 0 ? -1 : 2 * k - 1; right = 2 * k; }
+    else { left = -1; right = k; }
+    pageL.hidden = !dbl;
+    setPage(pageL, dbl ? left : -1);
+    setPage(pageR, right);
+    var mk = maxK(dbl), txt;
+    if (dbl) {
+      if (k === 0) txt = 'Omslag';
+      else if (2 * k + 1 > N) txt = 'Pagina ' + (2 * k) + ' van ' + N;
+      else txt = 'Pagina ' + (2 * k) + ' – ' + (2 * k + 1) + ' van ' + N;
+    } else txt = k === 0 ? 'Omslag' : 'Pagina ' + (k + 1) + ' van ' + N;
+    label.textContent = txt;
+    range.max = mk; range.value = k;
+    prevBtn.disabled = k <= 0; nextBtn.disabled = k >= mk;
+    modeBtn.textContent = dbl ? 'Eén pagina' : 'Twee pagina’s';
+    preload();
+  }
+  function makeLeaf(f) {
+    var el = document.createElement('div');
+    el.className = f.cls + (f.startGo ? ' go' : '');
+    var front = document.createElement('div'); front.className = 'face front';
+    var back = document.createElement('div'); back.className = 'face back';
+    setPage(front, f.front); setPage(back, f.back);
+    el.appendChild(front); el.appendChild(back);
+    return el;
+  }
+  function go(dir) {
+    if (state.flip) return;
+    var k = state.k, dbl = state.dbl, nk = k + dir;
+    if (nk < 0 || nk > maxK(dbl)) return;
+    var f;
+    if (dbl) {
+      if (dir > 0) f = { cls: 'leaf next', front: 2 * k, back: 2 * k + 1, startGo: false, left: 2 * k - 1, right: 2 * k + 2 };
+      else f = { cls: 'leaf prev', front: 2 * k - 1, back: 2 * k - 2, startGo: false, left: 2 * k - 3, right: 2 * k };
+    } else {
+      if (dir > 0) f = { cls: 'leaf next', front: k, back: -1, startGo: false, left: -1, right: k + 1 };
+      else f = { cls: 'leaf next', front: k - 1, back: -1, startGo: true, left: -1, right: k };
+    }
+    state.flip = f;
+    render();
+    leaf = makeLeaf(f);
+    book.appendChild(leaf);
+    requestAnimationFrame(function () { requestAnimationFrame(function () {
+      if (!state.flip) return;
+      leaf.classList.toggle('go', !f.startGo);
+      timer = setTimeout(function () {
+        if (leaf && leaf.parentNode) leaf.parentNode.removeChild(leaf);
+        leaf = null; state.k = nk; state.flip = null; render();
+      }, FLIP_MS);
+    }); });
+  }
+  function setMode(dbl) {
+    if (state.flip) return;
+    var cur = firstPage(state.k, state.dbl);
+    state.k = dbl ? Math.ceil(Math.max(cur, 0) / 2) : Math.max(cur, 0);
+    state.dbl = dbl;
+    render();
+  }
+  prevBtn.addEventListener('click', function () { go(-1); });
+  nextBtn.addEventListener('click', function () { go(1); });
+  document.getElementById('tapL').addEventListener('click', function () { go(-1); });
+  document.getElementById('tapR').addEventListener('click', function () { go(1); });
+  modeBtn.addEventListener('click', function () { setMode(!state.dbl); });
+  range.addEventListener('change', function () { var v = parseInt(range.value, 10); if (!isNaN(v) && !state.flip) { state.k = Math.max(0, Math.min(maxK(state.dbl), v)); render(); } });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowRight') go(1);
+    else if (e.key === 'ArrowLeft') go(-1);
+  });
+  window.addEventListener('resize', function () { if (state.dbl && window.innerWidth < 900) setMode(false); });
+  render();
+})();
+
+</script>
+</body>
+</html>
